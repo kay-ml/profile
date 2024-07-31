@@ -1,0 +1,87 @@
+	<!DOCTYPE HTML>
+	<html>
+	<head>
+		<title>Kay's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Inline CSS for typing effect */
+			#typed-text {
+				border-right: .1em solid black;
+				white-space: nowrap;
+				overflow: hidden;
+				display: inline-block;
+				font-family: monospace; /* Optional: to give it a typewriter-like look */
+				padding-right: 5px; /* Space for the blinking cursor */
+				font-size: 24px; /* Adjust as needed */
+			}
+
+			.typing {
+				animation: blink-caret .75s step-end infinite;
+			}
+
+			@keyframes blink-caret {
+				from, to { border-color: transparent; }
+				50% { border-color: black; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="typed-text"></h1>
+			<p>Aliter : Kay</p>
+			<p>19 | CS Undergrad | ML Enthusiast | Linux User | Cinema Lover<br /></p>
+		</header>
+
+		<body>
+		<!-- Resume and Blog Links -->
+		<br>
+		<a href="http://html5up.net">_resume_</a>
+		<a href="https://www.google.com">_blog_</a>
+		<br>    
+		</body>
+
+		
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://x.com/callmemux2005" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.linkedin.com/in/kavyaagarwal1405/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Kavya879" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="mailto:agarwal.kayya1405@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<br>
+			<ul class="copyright">
+				<li>&copy; Kay.</li>
+			</ul>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/main.js"></script>
+		<script>
+			// Inline JavaScript for typing effect
+			document.addEventListener("DOMContentLoaded", function() {
+				const text = "Kavya Agarwal";
+				const typedTextElement = document.getElementById("typed-text");
+
+				let index = 0;
+				function type() {
+					if (index < text.length) {
+						typedTextElement.innerHTML += text.charAt(index);
+						index++;
+						setTimeout(type, 100); // Adjust typing speed (ms)
+					} else {
+						typedTextElement.classList.remove('typing');
+					}
+				}
+
+				typedTextElement.classList.add('typing');
+				type();
+			});
+		</script>
+
+	</body>
+	</html>
