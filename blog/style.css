@@ -152,7 +152,7 @@ body
   
 }
 }
-@media(max-width:1000px)
+@media(max-width:1280px)
 {
 
 .cards 
@@ -162,7 +162,7 @@ body
   
 }
 }
-@media(max-width:750px)
+@media(max-width:880px)
 {
 
 .cards 
@@ -193,4 +193,20 @@ body
 }
 
 
+}
+
+@media(max-width:450px)
+{
+.card 
+{
+    width: 90%;
+    height: 50vh;
+}
+}
+@media(max-width:400px)
+{
+.card 
+{
+    height: 60vh;
+}
 }
